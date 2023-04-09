@@ -16,7 +16,7 @@ spec:
   selector:
     matchLabels:
       {{- toYaml .Values.matchLabels | nindent 6 }}
-  replicas: 4
+  replicas: 2
   template:
     metadata:
       labels:
