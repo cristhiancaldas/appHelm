@@ -25,3 +25,10 @@ spec:
       containers:
       - name: {{ .Values.containers.name }}
         image: {{ .Values.containers.image }}
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+          limits:
+            cpu: 100m
+            memory: 100Mi
