@@ -16,7 +16,7 @@ spec:
   selector:
     matchLabels:
       {{- toYaml .Values.matchLabels | nindent 6 }}
-  replicas: 3
+  replicas: 4
   template:
     metadata:
       labels:
@@ -28,7 +28,7 @@ spec:
         resources:
           requests:
             cpu: 200m
-            memory: 200Mi
+            memory: 256Mi
           limits:
-            cpu: 100m
-            memory: 100Mi
+            cpu: 300m
+            memory: 300Mi

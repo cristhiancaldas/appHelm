@@ -18,4 +18,4 @@ selector:
 
 containers:
   name: app-backen-container
-  image: crist/crist-web:1.0.2
+  image: crist/crist-web:1.0.6
